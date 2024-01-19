@@ -181,13 +181,13 @@ Example:
 ```shell
 $ ./4-listmorefiles
 total 32
-drwxr-xr-x@ 6 sylvain staff 204 Jan 25 00:29 .
+drwxr-xr-x@  6 sylvain staff  204 Jan 25 00:29 .
 drwxr-xr-x@ 43 sylvain staff 1462 Jan 25 00:19 ..
--rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:19 0-current_working_directory
--rwxr-xr-x@ 1 sylvain staff 19 Jan 25 00:23 1-listit
--rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:29 2-bring_me_home
--rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:39 3-listfiles
--rwxr-xr-x@ 1 sylvain staff 18 Jan 25 00:41 4-listmorefiles
+-rwxr-xr-x@  1 sylvain staff   18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@  1 sylvain staff   19 Jan 25 00:23 1-listit
+-rwxr-xr-x@  1 sylvain staff   18 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@  1 sylvain staff   18 Jan 25 00:39 3-listfiles
+-rwxr-xr-x@  1 sylvain staff   18 Jan 25 00:41 4-listmorefiles
 $
 ```
 - **File:** `4-listmorefiles`
@@ -201,14 +201,14 @@ Example:
 ```shell
 $ ./5-listfilesdigitonly
 total 32
-drwxr-xr-x@ 6 501 20 204 Jan 25 00:29 .
+drwxr-xr-x@  6 501 20  204 Jan 25 00:29 .
 drwxr-xr-x@ 43 501 20 1462 Jan 25 00:19 ..
--rwxr-xr-x@ 1 501 20 18 Jan 25 00:19 0-current_working_directory
--rwxr-xr-x@ 1 501 20 18 Jan 25 00:23 1-listfiles
--rwxr-xr-x@ 1 501 20 19 Jan 25 00:29 2-bring_me_home
--rwxr-xr-x@ 1 501 20 20 Jan 25 00:39 3-listfiles
--rwxr-xr-x@ 1 501 20 18 Jan 25 00:41 4-listmorefiles
--rwxr-xr-x@ 1 501 20 18 Jan 25 00:43 5-listfilesdigitonly
+-rwxr-xr-x@  1 501 20   18 Jan 25 00:19 0-current_working_directory
+-rwxr-xr-x@  1 501 20   18 Jan 25 00:23 1-listfiles
+-rwxr-xr-x@  1 501 20   19 Jan 25 00:29 2-bring_me_home
+-rwxr-xr-x@  1 501 20   20 Jan 25 00:39 3-listfiles
+-rwxr-xr-x@  1 501 20   18 Jan 25 00:41 4-listmorefiles
+-rwxr-xr-x@  1 501 20   18 Jan 25 00:43 5-listfilesdigitonly
 $
 ```
 - **File:** `5-listfilesdigitonly`
@@ -251,7 +251,7 @@ Example:
 ```shell
 $ ./9-firstdirdeletion
 $ file /tmp/my_first_directory
-/tmp/my_first_directory: cannot open `/tmp/my_first_directory' (No such file or directory)
+/tmp/my_first_directory: cannot open '/tmp/my_first_directory' (No such file or directory)
 $
 ```
 - **File:** `9-firstdirdeletion`
