@@ -15,7 +15,7 @@
 ### 2. There is no place like home. <sub>([2-bring_me_home](2-bring_me_home))</sub>
 
 - **Description:** Write a script that changes the working directory to the user’s home directory.
-               . You are not allowed to use any shell variables
+    - You are not allowed to use any shell variables
 
 - **File:** <code style="background-color: #f9f2f4;"><span style="color:red;">2-bring_me_home</span></code>
 
