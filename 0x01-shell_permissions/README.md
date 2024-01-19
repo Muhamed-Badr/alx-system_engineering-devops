@@ -1,4 +1,4 @@
-# Welcome To 0x01-Shell, permissions
+# Welcome To 0x01-Shell_permissions
 
 ## Resources
 **Read or watch:**
