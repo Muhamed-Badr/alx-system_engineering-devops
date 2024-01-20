@@ -1,0 +1,2 @@
+#!/bin/bash
+cat -n iacta | grep -w 3 #or head -n 3 iacta | tail -n 1
