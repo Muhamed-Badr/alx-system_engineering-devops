@@ -1,2 +1,2 @@
 #!/bin/bash
-
+find . -mindepth 1 -type d | wc -l #or ls -laR | grep '^d' | grep -vw '\.\.$' | grep -vw '\.$' | wc -l
