@@ -1,11 +1,55 @@
 # Welcome To 0x02-shell_redirections
 
-## Resources
-**Read or watch:**
-- [Shell, I/O Redirection](https://intranet.alxswe.com/rltoken/fGOQQXRKbvOcd1qLRxHzLQ)
-- [Special Characters](https://intranet.alxswe.com/rltoken/c1pz13vke3HPH0S8iALbtw)
+Table of Contents
+=================
 
-**man or help:**
+   * [Welcome To 0x02-shell_redirections](#welcome-to-0x02-shell_redirections)
+   * [Table of Contents](#table-of-contents)
+   * [Resources](#resources)
+        * [Read or watch](#read-or-watch)
+        * [man or help](#man-or-help)
+   * [Learning Objectives](#learning-objectives)
+        * [Shell, I/O Redirection](#shell-io-redirection)
+        * [Special Characters](#special-characters)
+        * [Other Man Pages](#other-man-pages)
+   * [Requirements](#requirements)
+        * [General](#general)
+   * [More Info](#more-info)
+   * [Tasks](#tasks)
+        * [0. Hello World.](#0-hello-world-0-hello_world)
+        * [1. Confused smiley.](#1-confused-smiley-1-confused_smiley)
+        * [2. Let's display a file.](#2-lets-display-a-file-2-hellofile)
+        * [3. What about 2?.](#3-what-about-2-3-twofiles)
+        * [4. Last lines of a file.](#4-last-lines-of-a-file-4-lastlines)
+        * [5. I'd prefer the first ones actually.](#5-id-prefer-the-first-ones-actually-5-firstlines)
+        * [6. Line #2.](#6-line-2-6-third_line)
+        * [7. It is a good file that cuts iron without making a noise.](#7-it-is-a-good-file-that-cuts-iron-without-making-a-noise-7-file)
+        * [8. Save current state of directory.](#8-save-current-state-of-directory-8-cwd_state)
+        * [9. Duplicate last line.](#9-duplicate-last-line-9-duplicate_last_line)
+        * [10. No more javascript.](#10-no-more-javascript-10-no_more_js)
+        * [11. Don't just count your directories, make your directories count.](#11-dont-just-count-your-directories-make-your-directories-count-11-directories)
+        * [12. What’s new.](#12-whats-new-12-newest_files)
+        * [13. Being unique is better than being perfect.](#13-being-unique-is-better-than-being-perfect-13-unique)
+        * [14. It must be in that file.](#14-it-must-be-in-that-file-14-findthatword)
+        * [15. Count that word.](#15-count-that-word-15-countthatword)
+        * [16. What's next?.](#16-whats-next-16-whatsnext)
+        * [17. I hate bins.](#17-i-hate-bins-17-hidethisword)
+        * [18. Letters only please.](#18-letters-only-please-18-letteronly)
+        * [19. A to Z.](#19-a-to-z-19-az)
+        * [20. Without C, you would live in hiago.](#20-without-c-you-would-live-in-hiago-20-hiago)
+        * [21. esreveR.](#21-esrever-21-reverse)
+        * [22. DJ Cut Killer.](#22-dj-cut-killer-22-users_and_homes)
+        * [23. Empty casks make the most noise.](#23-empty-casks-make-the-most-noise-100-empty_casks)
+        * [24. A gif is worth ten thousand words.](#24-a-gif-is-worth-ten-thousand-words-101-gifs)
+        * [25. Acrostic.](#25-acrostic-102-acrostic)
+        * [26. The biggest fan.](#26-the-biggest-fan-103-the_biggest_fan)
+
+## Resources
+### Read or watch:
+- [Shell, I/O Redirection](https://linuxcommand.org/lc3_lts0070.php)
+- [Special Characters](https://mywiki.wooledge.org/BashGuide/SpecialCharacters)
+
+### man or help:
 - `echo`
 - `cat`
 - `head`
@@ -55,7 +99,7 @@ Read your `/etc/passwd` and `/etc/shadow` files.
 **Note:** You do not have to learn about `fmt`, `pr`, `du`, `gzip`, `tar`, `lpr`, `sed` and `awk` yet.
 
 ## Tasks
-#### 0. Hello World. <sub>([0-hello_world](0-hello_world))</sub>
+### 0. Hello World. <sub>([0-hello_world](0-hello_world))</sub>
 - **Description:** Write a script that prints “Hello, World”, followed by a new line to the standard output.
 
 Example:
@@ -68,7 +112,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `0-hello_world`
 
-#### 1. Confused smiley. <sub>([1-confused_smiley](1-confused_smiley))</sub>
+### 1. Confused smiley. <sub>([1-confused_smiley](1-confused_smiley))</sub>
 - **Description:** Write a script that displays a confused smiley `"(Ôo)'`.
 
 Example:
@@ -79,7 +123,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `1-confused_smiley`
 
-#### 2. Let's display a file. <sub>([2-hellofile](2-hellofile))</sub>
+### 2. Let's display a file. <sub>([2-hellofile](2-hellofile))</sub>
 - **Description:** Display the content of the `/etc/passwd` file.
 
 Example:
@@ -112,7 +156,7 @@ $
 ```
 - **File:** `2-hellofile`
 
-#### 3. What about 2?. <sub>([3-twofiles](3-twofiles))</sub>
+### 3. What about 2?. <sub>([3-twofiles](3-twofiles))</sub>
 - **Description:** Display the content of `/etc/passwd` and `/etc/hosts`
 
 Example:
@@ -144,7 +188,7 @@ $
 ```
 - **File:** `3-twofiles`
 
-#### 4. Last lines of a file. <sub>([4-lastlines](4-lastlines))</sub>
+### 4. Last lines of a file. <sub>([4-lastlines](4-lastlines))</sub>
 - **Description:** Display the last 10 lines of `/etc/passwd`
 
 Example:
@@ -164,7 +208,7 @@ _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 - **Tips:** “Thinks of it as a cat, what is at the end of it?”
 - **File:** `4-lastlines`
 
-#### 5. I'd prefer the first ones actually. <sub>([5-firstlines](5-firstlines))</sub>
+### 5. I'd prefer the first ones actually. <sub>([5-firstlines](5-firstlines))</sub>
 - **Description:** Display the first 10 lines of `/etc/passwd`
 
 Example:
@@ -184,7 +228,7 @@ $
 ```
 - **File:** `5-firstlines`
 
-#### 6. Line #2. <sub>([6-third_line](6-third_line))</sub>
+### 6. Line #2. <sub>([6-third_line](6-third_line))</sub>
 - **Description:** Write a script that displays the third line of the file `iacta`.
 The file `iacta` will be in the working directory
 - You’re not allowed to use `sed`
@@ -213,7 +257,7 @@ julien@ubuntu:/tmp/h$
 - **Note:** The output will differ, depending on the content of the file `iacta`.
 - **File:** `6-third_line`
 
-#### 7. It is a good file that cuts iron without making a noise. <sub>([7-file](7-file))</sub>
+### 7. It is a good file that cuts iron without making a noise. <sub>([7-file](7-file))</sub>
 - **Description:** Write a shell script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line.
 
 Example:
@@ -231,7 +275,7 @@ julien@ubuntu:~/shell$
 ```
 - **File:** `7-file`
 
-#### 8. Save current state of directory. <sub>([8-cwd_state](8-cwd_state))</sub>
+### 8. Save current state of directory. <sub>([8-cwd_state](8-cwd_state))</sub>
 - **Description:** Write a script that writes into the file `ls_cwd_content` the result of the command `ls -la`. If the file `ls_cwd_content` already exists, it should be overwritten. If the file `ls_cwd_content` does not exist, create it.
 
 Example:
@@ -264,7 +308,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `8-cwd_state`
 
-#### 9. Duplicate last line. <sub>([9-duplicate_last_line](9-duplicate_last_line))</sub>
+### 9. Duplicate last line. <sub>([9-duplicate_last_line](9-duplicate_last_line))</sub>
 - **Description:** Write a script that duplicates the last line of the file `iacta`
 - The file `iacta` will be in the working directory
 
@@ -306,7 +350,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `9-duplicate_last_line`
 
-#### 10. No more javascript. <sub>([10-no_more_js](10-no_more_js))</sub>
+### 10. No more javascript. <sub>([10-no_more_js](10-no_more_js))</sub>
 - **Description:** Write a script that deletes all the regular files (not the directories) with a `.js` extension that are present in the current directory and all its subfolders.
 
 Example:
@@ -348,7 +392,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `10-no_more_js`
 
-#### 11. Don't just count your directories, make your directories count. <sub>([11-directories](11-directories))</sub>
+### 11. Don't just count your directories, make your directories count. <sub>([11-directories](11-directories))</sub>
 - **Description:** Write a script that counts the number of directories and sub-directories in the current directory.
 - The current and parent directories should not be taken into account
 - Hidden directories should be counted
@@ -397,7 +441,7 @@ julien@production-503e7013:~/shell/fun_with_the_shell$
 ```
 - **File:** `11-directories`
 
-#### 12. What’s new. <sub>([12-newest_files](12-newest_files))</sub>
+### 12. What’s new. <sub>([12-newest_files](12-newest_files))</sub>
 - **Description:** Create a script that displays the 10 newest files in the current directory.
 Requirements:
 - One file per line
@@ -436,7 +480,7 @@ alex@ubuntu:/tmp$
 ```
 - **File:** `12-newest_files`
 
-#### 13. Being unique is better than being perfect. <sub>([13-unique](13-unique))</sub>
+### 13. Being unique is better than being perfect. <sub>([13-unique](13-unique))</sub>
 - **Description:** Create a script that takes a list of words as input and prints only words that appear exactly once.
 - Input format: One line, one word
 - Output format: One line, one word
@@ -479,7 +523,7 @@ julien@ubuntu:/tmp/0x02$
 ```
 - **File:** `13-unique`
 
-#### 14. It must be in that file. <sub>([14-findthatword](14-findthatword))</sub>
+### 14. It must be in that file. <sub>([14-findthatword](14-findthatword))</sub>
 - **Description:** Display lines containing the pattern “root” from the file `/etc/passwd`
 
 Example:
@@ -492,7 +536,7 @@ $
 ```
 - **File:** `14-findthatword`
 
-#### 15. Count that word. <sub>([15-countthatword](15-countthatword))</sub>
+### 15. Count that word. <sub>([15-countthatword](15-countthatword))</sub>
 - **Description:** Display the number of lines that contain the pattern “bin” in the file `/etc/passwd`
 
 Example:
@@ -503,7 +547,7 @@ $
 ```
 - **File:** `15-countthatword`
 
-#### 16. What's next?. <sub>([16-whatsnext](16-whatsnext))</sub>
+### 16. What's next?. <sub>([16-whatsnext](16-whatsnext))</sub>
 - **Description:** Display lines containing the pattern “root” and 3 lines after them in the file `/etc/passwd`.
 
 Example:
@@ -523,7 +567,7 @@ $
 ```
 - **File:** `16-whatsnext`
 
-#### 17. I hate bins. <sub>([17-hidethisword](17-hidethisword))</sub>
+### 17. I hate bins. <sub>([17-hidethisword](17-hidethisword))</sub>
 - **Description:** Display all the lines in the file `/etc/passwd` that do not contain the pattern “bin”.
 
 Example:
@@ -543,7 +587,7 @@ $
 ```
 - **File:** `17-hidethisword`
 
-#### 18. Letters only please. <sub>([18-letteronly](18-letteronly))</sub>
+### 18. Letters only please. <sub>([18-letteronly](18-letteronly))</sub>
 - **Description:** Display all lines of the file `/etc/ssh/sshd_config` starting with a letter.
 - include capital letters as well
 
@@ -559,7 +603,7 @@ $
 ```
 - **File:** `18-letteronly`
 
-#### 19. A to Z. <sub>([19-AZ](19-AZ))</sub>
+### 19. A to Z. <sub>([19-AZ](19-AZ))</sub>
 - **Description:** Replace all characters `A` and `c` from input to `Z` and `e` respectively.
 
 Example:
@@ -570,7 +614,7 @@ julien@ubuntu:/tmp/0x02$
 ```
 - **File:** `19-AZ`
 
-#### 20. Without C, you would live in hiago. <sub>([20-hiago](20-hiago))</sub>
+### 20. Without C, you would live in hiago. <sub>([20-hiago](20-hiago))</sub>
 - **Description:** Create a script that removes all letters `c` and `C` from input.
 
 Example:
@@ -581,7 +625,7 @@ julien@ubuntu:/tmp/0x02$
 ```
 - **File:** `20-hiago`
 
-#### 21. esreveR. <sub>([21-reverse](21-reverse))</sub>
+### 21. esreveR. <sub>([21-reverse](21-reverse))</sub>
 - **Description:** Write a script that reverse its input.
 
 Example:
@@ -592,7 +636,7 @@ julien@ubuntu:/tmp/0x02$
 ```
 - **File:** `21-reverse`
 
-#### 22. DJ Cut Killer. <sub>([22-users_and_homes](22-users_and_homes))</sub>
+### 22. DJ Cut Killer. <sub>([22-users_and_homes](22-users_and_homes))</sub>
 - **Description:** Write a script that displays all users and their home directories, sorted by users.
 - Based on the the `/etc/passwd` file
 
@@ -689,7 +733,7 @@ julien@ubuntu:/tmp/0x02$
 ```
 - **File:** `22-users_and_homes`
 
-#### 23. Empty casks make the most noise. <sub>([100-empty_casks](100-empty_casks))</sub>
+### 23. Empty casks make the most noise. <sub>([100-empty_casks](100-empty_casks))</sub>
 - **Description:** Write a command that finds all empty files and directories in the current directory and all sub-directories.
 - Only the names of the files and directories should be displayed (not the entire path)
 - Hidden files should be listed
@@ -775,7 +819,7 @@ ubuntu@ip-172-31-63-244:~/0x02-shell_redirections$
 ```
 - **File:** `100-empty_casks`
 
-#### 24. A gif is worth ten thousand words. <sub>([101-gifs](101-gifs))</sub>
+### 24. A gif is worth ten thousand words. <sub>([101-gifs](101-gifs))</sub>
 - **Description:** Write a script that lists all the files with a `.gif` extension in the current directory and all its sub-directories.
 - Hidden files should be listed
 - Only regular files (not directories) should be listed
@@ -832,7 +876,7 @@ julien@production-503e7013:~/shell/fun_with_the_shell$
 ```
 - **File:** `101-gifs`
 
-#### 25. Acrostic. <sub>([102-acrostic](102-acrostic))</sub>
+### 25. Acrostic. <sub>([102-acrostic](102-acrostic))</sub>
 - **Description:** Create a script that decodes acrostics that use the first letter of each line.
 - An acrostic is a poem (or other form of writing) in which the first letter (or syllable, or word) of each line (or paragraph, or other recurring feature in the text) spells out a word message or the alphabet. The word comes from the French acrostiche from post-classical Latin acrostichis. As a form of constrained writing, an acrostic can be used as a mnemonic device to aid memory retrieval. [Read more](https://intranet.alxswe.com/rltoken/I2jXYKQIpVouDo0_1XrCJw).
 - The ‘decoded’ message has to end with a new line
@@ -856,7 +900,7 @@ julien@ubuntu:/tmp/0x02$
 ```
 - **File:** `102-acrostic`
 
-#### 26. The biggest fan. <sub>([103-the_biggest_fan](103-the_biggest_fan))</sub>
+### 26. The biggest fan. <sub>([103-the_biggest_fan](103-the_biggest_fan))</sub>
 - **Description:** Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
 - Order by number of requests, most active host or IP at the top
 - You are not allowed to use `grep`, `egrep`, `fgrep` or `rgrep`
@@ -911,4 +955,5 @@ torben.dou.dk
 julien@ubuntu:/tmp/0x02$ 
 ```
 - **File:** `103-the_biggest_fan`
+
 
