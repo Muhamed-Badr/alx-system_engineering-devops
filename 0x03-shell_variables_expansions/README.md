@@ -45,7 +45,7 @@ Table of Contents
 - [Variables](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_02.html)
 - [Shell initialization files](https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_03_01.html)
 - [The alias Command](https://www.linfo.org/alias.html)
-- [Technical Writing]()
+- [Technical Writing](https://drive.google.com/file/d/1FYS6InMQzEdOeXQWuu0qyVvkjfzJaqhl/view?usp=drive_link)
 ### man or help:
 - `printenv`
 - `set`
