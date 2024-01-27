@@ -1,18 +1,59 @@
 # Welcome To 0x00-shell_basics
 
-## Resources
-**Read or watch:**
-- [What Is “The Shell”?](https://intranet.alxswe.com/rltoken/vwO91sqNBgRL03BLu-ueiA)
-- [Navigation](https://intranet.alxswe.com/rltoken/iblidp7yp6i-QpT8rDXHaA)
-- [Looking Around](https://intranet.alxswe.com/rltoken/xEKUCnQsMH0esQ6fJU5vLA)
-- [A Guided Tour](https://intranet.alxswe.com/rltoken/HUhQ73fFR1GOC5nb4r-mDw)
-- [Manipulating Files](https://intranet.alxswe.com/rltoken/olv-1tj4d1LA57Z0PrLNvw)
-- [Working With Commands](https://intranet.alxswe.com/rltoken/zUtux3Pm0BkvtwXzbTtkmA)
-- [Reading Man pages](https://intranet.alxswe.com/rltoken/rddGdsqLf8_kRzp12RaD4A)
-- [Keyboard shortcuts for Bash](https://intranet.alxswe.com/rltoken/AGxMxuS5IeW8VmEvJyhwvw)
-- [Shebang](https://intranet.alxswe.com/rltoken/cE8ZA3kgEaFhB-IDNv31bQ)
+Table of Contents
+=================
+    * [Welcome To 0x00-shell_basics](#welcome-to-0x00-shell_basics)
+    * [Table of Contents](#table-of-contents)
+    * [Resources](#resources)
+        * [Read or watch:](#read-or-watch)
+        * [man or help:](#man-or-help)
+    * [Learning Objectives](#learning-objectives)
+        * [General](#general)
+        * [What is the Shell](#what-is-the-shell)
+        * [Navigation](#navigation)
+        * [Looking Around](#looking-around)
+        * [Manipulating Files](#manipulating-files)
+        * [Working with Commands](#working-with-commands)
+        * [Reading Man Pages](#reading-man-pages)
+        * [Keyboard Shortcuts for Bash](#keyboard-shortcuts-for-bash)
+    * [Requirements](#requirements)
+        * [General](#general-1)
+    * [More Info](#more-info)
+    * [Tasks](#tasks)
+        * [0. Where am I?.](#0-where-am-i-0-current_working_directory)
+        * [1. What’s in there?.](#1-whats-in-there-1-listit)
+        * [2. There is no place like home.](#2-there-is-no-place-like-home-2-bring_me_home)
+        * [3. The long format.](#3-the-long-format-3-listfiles)
+        * [4. Hidden files.](#4-hidden-files-4-listmorefiles)
+        * [5. I love numbers.](#5-i-love-numbers-5-listfilesdigitonly)
+        * [6. Welcome.](#6-welcome-6-firstdirectory)
+        * [7. Betty in my first directory.](#7-betty-in-my-first-directory-7-movethatfile)
+        * [8. Bye bye Betty.](#8-bye-bye-betty-8-firstdelete)
+        * [9. Bye bye My first directory.](#9-bye-bye-my-first-directory-9-firstdirdeletion)
+        * [10. Back to the future.](#10-back-to-the-future-10-back)
+        * [11. Lists.](#11-lists-11-lists)
+        * [12. File type.](#12-file-type-12-file_type)
+        * [13. We are symbols, and inhabit symbols.](#13-we-are-symbols-and-inhabit-symbols-13-symbolic_link)
+        * [14. Copy HTML files.](#14-copy-html-files-14-copy_html)
+        * [15. Let’s move.](#15-lets-move-100-lets_move)
+        * [16. Clean Emacs.](#16-clean-emacs-101-clean_emacs)
+        * [17. Tree.](#17-tree-102-tree)
+        * [18. Life is a series of commas, not periods.](#18-life-is-a-series-of-commas-not-periods-103-commas)
+        * [19. File type: School.](#19-file-type-school-schoolmgc)
 
-**man or help:**
+## Resources
+### Read or watch:
+- [What Is “The Shell”?](https://linuxcommand.org/lc3_lts0010.php)
+- [Navigation](https://linuxcommand.org/lc3_lts0020.php)
+- [Looking Around](https://linuxcommand.org/lc3_lts0030.php)
+- [A Guided Tour](https://linuxcommand.org/lc3_lts0040.php)
+- [Manipulating Files](https://linuxcommand.org/lc3_lts0050.php)
+- [Working With Commands](https://linuxcommand.org/lc3_lts0060.php)
+- [Reading Man pages](https://linuxcommand.org/lc3_man_pages/man1.html)
+- [Keyboard shortcuts for Bash](https://www.howtogeek.com/181/keyboard-shortcuts-for-bash-command-shell-for-ubuntu-debian-suse-redhat-linux-etc/)
+- [Shebang](https://en.wikipedia.org/wiki/Shebang_%28Unix%29)
+
+### man or help:
 - `cd`
 - `ls`
 - `pwd`
@@ -54,7 +95,7 @@
 - What do the commands `ls`, `less`, `file` do
 - How do you use options and arguments with commands
 - Understand the ls long format and how to display it
-- [A Guided Tour](https://intranet.alxswe.com/rltoken/HUhQ73fFR1GOC5nb4r-mDw)
+- [A Guided Tour](https://linuxcommand.org/lc3_lts0040.php)
 - What does the `ln` command do
 - What do you find in the most common/important directories
 - What is a symbolic link
@@ -124,7 +165,7 @@ julien@ubuntu:/tmp$
 ```
 
 ## Tasks
-#### 0. Where am I? <sub>([0-current_working_directory](0-current_working_directory))</sub>
+### 0. Where am I?. <sub>([0-current_working_directory](0-current_working_directory))</sub>
 - **Description:** Write a script that prints the absolute path name of the current working directory.
 Example:
 ```shell
@@ -134,7 +175,7 @@ $
 ```
 - **File:** <code style="background-color: #f9f2f4;"><span style="color:#c7254e;">0-current_working_directory</span></code>
 
-#### 1. What’s in there? <sub>([1-listit](1-listit))</sub>
+### 1. What’s in there?. <sub>([1-listit](1-listit))</sub>
 - **Description:** Display the contents list of your current directory.
 Example:
 ```shell
@@ -145,7 +186,7 @@ $
 ```
 - **File:** `1-listit`
 
-#### 2. There is no place like home. <sub>([2-bring_me_home](2-bring_me_home))</sub>
+### 2. There is no place like home. <sub>([2-bring_me_home](2-bring_me_home))</sub>
 - **Description:** Write a script that changes the working directory to the user’s home directory.
     - You are not allowed to use any shell variables
 Example: 
@@ -161,7 +202,7 @@ julien@ubuntu:~$
 ```
 - **File:** `2-bring_me_home`
 
-#### 3. The long format. <sub>([3-listfiles](3-listfiles))</sub>
+### 3. The long format. <sub>([3-listfiles](3-listfiles))</sub>
 - **Description:** Display current directory contents in a long format.
 Example:
 ```shell
@@ -175,7 +216,7 @@ $
 ```
 - **File:** `3-listfiles`
 
-#### 4. Hidden files. <sub>([4-listmorefiles](4-listmorefiles))</sub>
+### 4. Hidden files. <sub>([4-listmorefiles](4-listmorefiles))</sub>
 - **Description:** Display current directory contents, including hidden files (starting with `.`). Use the long format.
 Example:
 ```shell
@@ -192,7 +233,7 @@ $
 ```
 - **File:** `4-listmorefiles`
 
-### 5. I love numbers. <sub>([5-listfilesdigitonly](5-listfilesdigitonly))</sub>
+## 5. I love numbers. <sub>([5-listfilesdigitonly](5-listfilesdigitonly))</sub>
 - **Description:** Display current directory contents.
     -  Long format
     -  with user and group IDs displayed numerically
@@ -213,7 +254,7 @@ $
 ```
 - **File:** `5-listfilesdigitonly`
 
-### 6. Welcome. <sub>([6-firstdirectory](6-firstdirectory))</sub>
+## 6. Welcome. <sub>([6-firstdirectory](6-firstdirectory))</sub>
 - **Description:** Create a script that creates a directory named `my_first_directory` in the `/tmp/` directory.
 Example:
 ```shell
@@ -224,7 +265,7 @@ $
 ```
 - **File:** `6-firstdirectory`
 
-#### 7. Betty in my first directory. <sub>([7-movethatfile](7-movethatfile))</sub>
+### 7. Betty in my first directory. <sub>([7-movethatfile](7-movethatfile))</sub>
 - **Description:** Move the file `betty` from `/tmp/` to `/tmp/my_first_directory`.
 Example:
 ```shell
@@ -235,7 +276,7 @@ $
 ```
 - **File:** `7-movethatfile`
 
-#### 8. Bye bye Betty. <sub>([8-firstdelete](8-firstdelete))</sub>
+### 8. Bye bye Betty. <sub>([8-firstdelete](8-firstdelete))</sub>
 - **Description:** Delete the file `betty`(The file `betty` is in `/tmp/my_first_directory`).
 Example:
 ```shell
@@ -245,7 +286,7 @@ $
 ```
 - **File:** `8-firstdelete`
 
-#### 9. Bye bye My first directory. <sub>([9-firstdirdeletion](9-firstdirdeletion))</sub>
+### 9. Bye bye My first directory. <sub>([9-firstdirdeletion](9-firstdirdeletion))</sub>
 - **Description:** Delete the directory `my_first_directory` that is in the `/tmp` directory.
 Example:
 ```shell
@@ -256,7 +297,7 @@ $
 ```
 - **File:** `9-firstdirdeletion`
 
-#### 10. Back to the future. <sub>([10-back](10-back))</sub>
+### 10. Back to the future. <sub>([10-back](10-back))</sub>
 - **Description:** Write a script that changes the working directory to the previous one.
 Example:
 ```shell
@@ -272,11 +313,11 @@ julien@ubuntu:/tmp$ pwd
 ```
 - **File:** `10-back`
 
-#### 11. Lists. <sub>([11-lists](11-lists))</sub>
+### 11. Lists. <sub>([11-lists](11-lists))</sub>
 - **Description:** Write a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the `/boot` directory (in this order), in long format.
 - **File:** `11-lists`
 
-#### 12. File type. <sub>([12-file_type](12-file_type))</sub>
+### 12. File type. <sub>([12-file_type](12-file_type))</sub>
 - **Description:** Write a script that prints the type of the file named `iamafile`(The file `iamafile` will be in the `/tmp` directory when we will run your script).
 Example
 ```shell
@@ -285,7 +326,7 @@ ubuntu@ip-172-31-63-244:~$ ./12-file_type
 ```
 - **File:** `12-file_type`
 
-#### 13. We are symbols, and inhabit symbols. <sub>([13-symbolic_link](13-symbolic_link))</sub>
+### 13. We are symbols, and inhabit symbols. <sub>([13-symbolic_link](13-symbolic_link))</sub>
 - **Description:** Create a symbolic link to `/bin/ls`, named `__ls__` in the current working directory.
 Example:
 ```shell
@@ -302,12 +343,12 @@ lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
 ```
 - **File:** `13-symbolic_link`
 
-#### 14. Copy HTML files. <sub>([14-copy_html](14-copy_html))</sub>
+### 14. Copy HTML files. <sub>([14-copy_html](14-copy_html))</sub>
 - **Description:** Create a script that copies all the HTML files from the current working directory to the parent of the working directory,but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.
     - You can consider that all HTML files have the extension `.html`.
 - **File:** `14-copy_html`
 
-#### 15. Let’s move. <sub>([100-lets_move](100-lets_move))</sub>
+### 15. Let’s move. <sub>([100-lets_move](100-lets_move))</sub>
 - **Description:** Create a script that moves all files beginning with an uppercase letter to the directory `/tmp/u`.
 Example:
 ```shell
@@ -339,7 +380,7 @@ drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
 ```
 - **File:** `100-lets_move`
 
-#### 16. Clean Emacs. <sub>([101-clean_emacs](101-clean_emacs))</sub>
+### 16. Clean Emacs. <sub>([101-clean_emacs](101-clean_emacs))</sub>
 - **Description:** Create a script that deletes all files in the current working directory that end with the character `~`.
 Example:
 ```shell
@@ -352,7 +393,7 @@ ubuntu@ip-172-31-63-244:/tmp/emacs$
 ```
 - **File:** `101-clean_emacs`
 
-#### 17. Tree. <sub>([102-tree](102-tree))</sub>
+### 17. Tree. <sub>([102-tree](102-tree))</sub>
 - **Description:** Create a script that creates the directories `welcome/`, `welcome/to/` and `welcome/to/school` in the current directory.
     - You are only allowed to use two spaces (and lines) in your script, not more.
 Example:
@@ -378,7 +419,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `102-tree`
 
-#### 18. Life is a series of commas, not periods. <sub>([103-commas](103-commas))</sub>
+### 18. Life is a series of commas, not periods. <sub>([103-commas](103-commas))</sub>
 - **Description:** Write a command that lists all the files and directories of the current directory, separated by commas (`,`).
     - Directory names should end with a slash (`/`)
     - Files and directories starting with a dot (`.`) should be listed
@@ -401,7 +442,7 @@ ubuntu@ubuntu:~/$
 ```
 - **File:** `103-commas`
 
-#### 19. File type: School. <sub>([school.mgc](school.mgc))</sub>
+### 19. File type: School. <sub>([school.mgc](school.mgc))</sub>
 - **Description:** Create a magic file `school.mgc` that can be used with the command `file` to detect `School` data files.`School` data files always contain the string `SCHOOL` at offset 0.
 Example:
 ```shell
