@@ -1,10 +1,42 @@
 # Welcome To 0x01-Shell_permissions
 
-## Resources
-**Read or watch:**
-- [Permissions](https://intranet.alxswe.com/rltoken/aQmRB6ms-SDHUhqY0Rsa3g)
+Table of Contents
+=================
+* [Welcome To 0x01-Shell_permissions](#welcome-to-0x01-shell_permissions)
+* [Table of Contents](#table-of-contents)
+* [Resources](#resources)
+    * [Read or watch:](#read-or-watch)
+    * [man or help:](#man-or-help)
+* [Learning Objectives](#learning-objectives)
+    * [Permissions](#permissions)
+    * [Other Man Pages](#other-man-pages)
+* [Requirements](#requirements)
+    * [General](#general)
+* [Tasks](#tasks)
+    * [0. My name is Betty.](#0-my-name-is-betty-0-iam_betty)
+    * [1. Who am I.](#1-who-am-i-1-who_am_i)
+    * [2. Groups.](#2-groups-2-groups)
+    * [3. New owner.](#3-new-owner-3-new_owner)
+    * [4. Empty!.](#4-empty-4-empty)
+    * [5. Execute.](#5-execute-5-execute)
+    * [6. Multiple permissions.](#6-multiple-permissions-6-multiple_permissions)
+    * [7. Everybody!.](#7-everybody-7-everybody)
+    * [8. James Bond.](#8-james-bond-8-james_bond)
+    * [9. John Doe.](#9-john-doe-9-john_doe)
+    * [10. Look in the mirror.](#10-look-in-the-mirror-10-mirror_permissions)
+    * [11. Directories.](#11-directories-11-directories_permissions)
+    * [12. More directories.](#12-more-directories-12-directory_permissions)
+    * [13. Change group.](#13-change-group-13-change_group)
+    * [14. Owner and group.](#14-owner-and-group-100-change_owner_and_group)
+    * [15. Symbolic links.](#15-symbolic-links-101-symbolic_link_permissions)
+    * [16. If only.](#16-if-only-102-if_only)
+    * [17. Star Wars.](#17-star-wars-103-star_wars)
 
-**man or help:**
+## Resources
+### Read or watch:
+- [Permissions](https://linuxcommand.org/lc3_lts0090.php)
+
+### man or help:
 - `chmod`
 - `sudo`
 - `su`
@@ -44,7 +76,7 @@
 - All your files must be executable
 
 ## Tasks
-#### 0. My name is Betty. <sub>([0-iam_betty](0-iam_betty))</sub>
+### 0. My name is Betty. <sub>([0-iam_betty](0-iam_betty))</sub>
 - **Description:** Create a script that switches the current user to the user `betty`.
     - You should use exactly 8 characters for your command (+1 character for the new line)
 Example:
@@ -55,7 +87,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `0-iam_betty`
 
-#### 1. Who am I. <sub>([1-who_am_i](1-who_am_i))</sub>
+### 1. Who am I. <sub>([1-who_am_i](1-who_am_i))</sub>
 - **Description:** Write a script that prints the effective username of the current user.
 Example:
 ```shell
@@ -65,7 +97,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `1-who_am_i`
 
-#### 2. Groups. <sub>([2-groups](2-groups))</sub>
+### 2. Groups. <sub>([2-groups](2-groups))</sub>
 - **Description:** Write a script that prints all the groups the current user is part of.
 Example:
 ```shell
@@ -76,7 +108,7 @@ julien@ubuntu:/tmp/h$
 - **Note:** depending on the user, you will get a different output.
 - **File:** `2-groups`
 
-#### 3. New owner. <sub>([3-new_owner](3-new_owner))</sub>
+### 3. New owner. <sub>([3-new_owner](3-new_owner))</sub>
 - **Description:** Write a script that changes the owner of the file `hello` to the user `betty`.
 Example:
 ```shell
@@ -93,11 +125,11 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `3-new_owner`
 
-#### 4. Empty!. <sub>([4-empty](4-empty))</sub>
+### 4. Empty!. <sub>([4-empty](4-empty))</sub>
 - **Description:** Write a script that creates an empty file called `hello`.
 - **File:** `4-empty`
 
-#### 5. Execute. <sub>([5-execute](5-execute))</sub>
+### 5. Execute. <sub>([5-execute](5-execute))</sub>
 - **Description:** Write a script that adds execute permission to the owner of the file `hello`.
     - The file `hello` will be in the working directory
 Example:
@@ -117,7 +149,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `5-execute`
 
-#### 6. Multiple permissions. <sub>([6-multiple_permissions](6-multiple_permissions))</sub>
+### 6. Multiple permissions. <sub>([6-multiple_permissions](6-multiple_permissions))</sub>
 - **Description:** Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file `hello`.
 The file `hello` will be in the working directory
 Example:
@@ -135,7 +167,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `6-multiple_permissions`
 
-#### 7. Everybody!. <sub>([7-everybody](7-everybody))</sub>
+### 7. Everybody!. <sub>([7-everybody](7-everybody))</sub>
 - **Description:** Write a script that adds execution permission to the owner, the group owner and the other users, to the file `hello`
     - The file `hello` will be in the working directory
     - You are not allowed to use commas for this script
@@ -154,7 +186,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `7-everybody`
 
-#### 8. James Bond. <sub>([8-James_Bond](8-James_Bond))</sub>
+### 8. James Bond. <sub>([8-James_Bond](8-James_Bond))</sub>
 - **Description:** Write a script that sets the permission to the file `hello` as follows:
     - Owner: no permission at all
     - Group: no permission at all
@@ -175,14 +207,14 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `8-James_Bond`
 
-#### 9. John Doe. <sub>([9-John_Doe](9-John_Doe))</sub>
+### 9. John Doe. <sub>([9-John_Doe](9-John_Doe))</sub>
 - **Description:** Write a script that sets the mode of the file `hello` to this:
 `-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello`
     - The file `hello` will be in the working directory
     - You are not allowed to use commas for this script
 - **File:** `9-John_Doe`
 
-#### 10. Look in the mirror. <sub>([10-mirror_permissions](10-mirror_permissions))</sub>
+### 10. Look in the mirror. <sub>([10-mirror_permissions](10-mirror_permissions))</sub>
 - **Description:** Write a script that sets the mode of the file `hello` the same as `olleh`’s mode.
     - The file `hello` will be in the working directory
     - The file `olleh` will be in the working directory
@@ -204,7 +236,7 @@ julien@ubuntu:/tmp/h$
 - **Note:** the mode of olleh will not always be 664. Make sure your script works for any mode.
 - **File:** `10-mirror_permissions`
 
-#### 11. Directories. <sub>([11-directories_permissions](11-directories_permissions))</sub>
+### 11. Directories. <sub>([11-directories_permissions](11-directories_permissions))</sub>
 - **Description:** Create a script that adds execute permission to all subdirectories of the **current directory** for the owner, the group owner and all other users.
     - Regular files should not be changed.
 Example:
@@ -228,7 +260,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `11-directories_permissions`
 
-#### 12. More directories. <sub>([12-directory_permissions](12-directory_permissions))</sub>
+### 12. More directories. <sub>([12-directory_permissions](12-directory_permissions))</sub>
 - **Description:** Create a script that creates a directory called `my_dir` with permissions 751 in the working directory.
 Example:
 ```shell
@@ -252,7 +284,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `12-directory_permissions`
 
-#### 13. Change group. <sub>([13-change_group](13-change_group))</sub>
+### 13. Change group. <sub>([13-change_group](13-change_group))</sub>
 - **Description:** Write a script that changes the group owner to `school` for the file `hello`
     - The file `hello` will be in the working directory
 Example:
@@ -278,7 +310,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `13-change_group`
 
-#### 14. Owner and group. <sub>([100-change_owner_and_group](100-change_owner_and_group))</sub>
+### 14. Owner and group. <sub>([100-change_owner_and_group](100-change_owner_and_group))</sub>
 - **Description:** Write a script that changes the owner to `vincent` and the group owner to `staff` for all the files and directories in the working directory.
 Example:
 ```shell
@@ -303,7 +335,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `100-change_owner_and_group`
 
-#### 15. Symbolic links. <sub>([101-symbolic_link_permissions](101-symbolic_link_permissions))</sub>
+### 15. Symbolic links. <sub>([101-symbolic_link_permissions](101-symbolic_link_permissions))</sub>
 - **Description:** Write a script that changes the owner and the group owner of `_hello` to `vincent` and `staff` respectively.
     - The file `_hello` is in the working directory
     - The file `_hello` is a symbolic link
@@ -324,7 +356,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `101-symbolic_link_permissions`
 
-#### 16. If only. <sub>([102-if_only](102-if_only))</sub>
+### 16. If only. <sub>([102-if_only](102-if_only))</sub>
 - **Description:** Write a script that changes the owner of the file `hello` to `betty` only if it is owned by the user `guillaume`.
     - The file `hello` will be in the working directory
 Example:
@@ -342,7 +374,7 @@ julien@ubuntu:/tmp/h$
 ```
 - **File:** `102-if_only`
 
-#### 17. Star Wars. <sub>([103-Star_Wars](103-Star_Wars))</sub>
+### 17. Star Wars. <sub>([103-Star_Wars](103-Star_Wars))</sub>
 - **Description:** Write a script that will play the StarWars IV episode in the terminal.
 - **File:** `103-Star_Wars`
 
