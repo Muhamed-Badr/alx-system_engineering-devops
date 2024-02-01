@@ -1,2 +1,2 @@
 #!/bin/bash
-
+echo -e "obase=16; ibase=10;$DECIMAL;" | bc #or echo -e "obase=16; $DECIMAL;" | bc (base 10 is the default for 'ibase' and 'obase') #or printf "%x\n" $DECIMAL
