@@ -198,8 +198,8 @@ julien@ubuntu:/tmp/h$
     - Owner: no permission at all
     - Group: no permission at all
     - Other users: all the permissions
-
 The file `hello` will be in the working directory You are not allowed to use commas for this script
+
 Example:
 ```shell
 julien@ubuntu:/tmp/h$ ls -l
