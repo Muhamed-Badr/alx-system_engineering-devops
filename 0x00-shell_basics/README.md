@@ -143,7 +143,7 @@ julien@ubuntu:/tmp$
 ```
 In order to test your scripts, you will need to use this command: `chmod u+x file`. We will see later what does `chmod` mean and do, but you can have a look at `man chmod` if you are curious.
 
-Example
+Example:
 ```shell
 julien@ubuntu:/tmp$ ls
 12-file_type
@@ -167,6 +167,7 @@ julien@ubuntu:/tmp$
 ## Tasks
 ### 0. Where am I?. <sub>([0-current_working_directory](0-current_working_directory))</sub>
 - **Description:** Write a script that prints the absolute path name of the current working directory.
+
 Example:
 ```shell
 $ ./0-current_working_directory
@@ -177,6 +178,7 @@ $
 
 ### 1. What’s in there?. <sub>([1-listit](1-listit))</sub>
 - **Description:** Display the contents list of your current directory.
+
 Example:
 ```shell
 $ ./1-listit
@@ -189,6 +191,7 @@ $
 ### 2. There is no place like home. <sub>([2-bring_me_home](2-bring_me_home))</sub>
 - **Description:** Write a script that changes the working directory to the user’s home directory.
     - You are not allowed to use any shell variables
+
 Example: 
 ```shell
 julien@ubuntu:/tmp$ pwd
@@ -204,6 +207,7 @@ julien@ubuntu:~$
 
 ### 3. The long format. <sub>([3-listfiles](3-listfiles))</sub>
 - **Description:** Display current directory contents in a long format.
+
 Example:
 ```shell
 $ ./3-listfiles
@@ -218,6 +222,7 @@ $
 
 ### 4. Hidden files. <sub>([4-listmorefiles](4-listmorefiles))</sub>
 - **Description:** Display current directory contents, including hidden files (starting with `.`). Use the long format.
+
 Example:
 ```shell
 $ ./4-listmorefiles
@@ -238,6 +243,7 @@ $
     -  Long format
     -  with user and group IDs displayed numerically
     -  And hidden files (starting with `.`)
+
 Example:
 ```shell
 $ ./5-listfilesdigitonly
@@ -256,6 +262,7 @@ $
 
 ## 6. Welcome. <sub>([6-firstdirectory](6-firstdirectory))</sub>
 - **Description:** Create a script that creates a directory named `my_first_directory` in the `/tmp/` directory.
+
 Example:
 ```shell
 $ ./6-firstdirectory
@@ -267,6 +274,7 @@ $
 
 ### 7. Betty in my first directory. <sub>([7-movethatfile](7-movethatfile))</sub>
 - **Description:** Move the file `betty` from `/tmp/` to `/tmp/my_first_directory`.
+
 Example:
 ```shell
 $ ./7-movethatfile
@@ -278,6 +286,7 @@ $
 
 ### 8. Bye bye Betty. <sub>([8-firstdelete](8-firstdelete))</sub>
 - **Description:** Delete the file `betty`(The file `betty` is in `/tmp/my_first_directory`).
+
 Example:
 ```shell
 $ ./8-firstdelete
@@ -288,6 +297,7 @@ $
 
 ### 9. Bye bye My first directory. <sub>([9-firstdirdeletion](9-firstdirdeletion))</sub>
 - **Description:** Delete the directory `my_first_directory` that is in the `/tmp` directory.
+
 Example:
 ```shell
 $ ./9-firstdirdeletion
@@ -299,6 +309,7 @@ $
 
 ### 10. Back to the future. <sub>([10-back](10-back))</sub>
 - **Description:** Write a script that changes the working directory to the previous one.
+
 Example:
 ```shell
 julien@ubuntu:/tmp$ pwd
@@ -319,6 +330,7 @@ julien@ubuntu:/tmp$ pwd
 
 ### 12. File type. <sub>([12-file_type](12-file_type))</sub>
 - **Description:** Write a script that prints the type of the file named `iamafile`(The file `iamafile` will be in the `/tmp` directory when we will run your script).
+
 Example
 ```shell
 ubuntu@ip-172-31-63-244:~$ ./12-file_type
@@ -328,6 +340,7 @@ ubuntu@ip-172-31-63-244:~$ ./12-file_type
 
 ### 13. We are symbols, and inhabit symbols. <sub>([13-symbolic_link](13-symbolic_link))</sub>
 - **Description:** Create a symbolic link to `/bin/ls`, named `__ls__` in the current working directory.
+
 Example:
 ```shell
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
@@ -350,6 +363,7 @@ lrwxrwxrwx  1 ubuntu ubuntu      7 Sep 20 03:24 __ls__ -> /bin/ls
 
 ### 15. Let’s move. <sub>([100-lets_move](100-lets_move))</sub>
 - **Description:** Create a script that moves all files beginning with an uppercase letter to the directory `/tmp/u`.
+
 Example:
 ```shell
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls -la
@@ -382,6 +396,7 @@ drwxrwxr-x 3 ubuntu ubuntu 4096 Sep 20 03:33 ..
 
 ### 16. Clean Emacs. <sub>([101-clean_emacs](101-clean_emacs))</sub>
 - **Description:** Create a script that deletes all files in the current working directory that end with the character `~`.
+
 Example:
 ```shell
 ubuntu@ip-172-31-63-244:/tmp/sym$ ls
@@ -396,6 +411,7 @@ ubuntu@ip-172-31-63-244:/tmp/emacs$
 ### 17. Tree. <sub>([102-tree](102-tree))</sub>
 - **Description:** Create a script that creates the directories `welcome/`, `welcome/to/` and `welcome/to/school` in the current directory.
     - You are only allowed to use two spaces (and lines) in your script, not more.
+
 Example:
 ```shell
 julien@ubuntu:/tmp/h$ ls -l
