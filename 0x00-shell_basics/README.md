@@ -331,7 +331,7 @@ julien@ubuntu:/tmp$ pwd
 ### 12. File type. <sub>([12-file_type](12-file_type))</sub>
 - **Description:** Write a script that prints the type of the file named `iamafile`(The file `iamafile` will be in the `/tmp` directory when we will run your script).
 
-Example
+Example:
 ```shell
 ubuntu@ip-172-31-63-244:~$ ./12-file_type
 /tmp/iamafile: ELF 64-bit LSB  executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.24, BuildID[sha1]=bd39c07194a778ccc066fc963ca152bdfaa3f971, stripped
@@ -460,6 +460,7 @@ ubuntu@ubuntu:~/$
 
 ### 19. File type: School. <sub>([school.mgc](school.mgc))</sub>
 - **Description:** Create a magic file `school.mgc` that can be used with the command `file` to detect `School` data files.`School` data files always contain the string `SCHOOL` at offset 0.
+
 Example:
 ```shell
 ubuntu@ip-172-31-63-244:/tmp/magic$ cp /bin/ls .
