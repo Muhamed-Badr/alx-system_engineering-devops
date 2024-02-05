@@ -18,6 +18,11 @@ Table of Contents
 * [Requirements](#requirements)
     * [General](#general-1)
 * [More Info](#more-info)
+* [Quiz questions](#quiz-questions)
+    * [Question #0](#question-0)
+    * [Question #1](#question-1)
+    * [Question #2](#question-2)
+    * [Question #3](#question-3)
 * [Tasks](#tasks)
     * [0. &lt;o&gt;.](#0-o-0-alias)
     * [1. Hello you.](#1-hello-you-1-hello_you)
@@ -58,6 +63,8 @@ Table of Contents
 - `printf`
 
 ## Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg), **without the help of Google:**
+
 ### General
 - What happens when you type `$ ls -l *.txt`
 ### Shell Initialization Files
@@ -100,6 +107,42 @@ Read your `/etc/profile`, `/etc/inputrc` and `~/.bashrc` files.
 Look at some files in the `/etc/profile.d` directory.
 **Note:** You do not have to learn about `awk`, `tar`, `bzip2`, `date`, `scp`, `ulimit`, `umask`, or shell scripting, yet.
 
+## Quiz questions
+### Question #0
+Which command should I use to define a new command push for pushing in Github?
+
+Example:
+```shell
+$ push 
+Everything up-to-date
+$
+```
+- [ ] `export push=git push`
+- [x] `alias push="git push"`
+- [ ] `export push="git push"`
+- [ ] `alias push=git push`
+
+### Question #1
+What is the variable name who contains the previous working directory path?
+- [ ] `PREVDIR`
+- [x] `OLDPWD`
+- [ ] `PREVPWD`
+- [ ] `OLDDIR`
+
+### Question #2
+Which command should I use to display the exit code of the previous command?
+- [ ] `echo $CODE`
+- [ ] `echo ?`
+- [ ] `echo $EXITCODE`
+- [x] `echo $?`
+
+### Question #3
+Which command should I use to display a variable?
+- [x] `echo $MYVAR`
+- [ ] `ls $MYVAR`
+- [ ] `cd $MYVAR`
+- [ ] `export $MYVAR`
+
 ## Tasks
 ### 0. \<o\>. <sub>([0-alias](0-alias))</sub>
 - **Description:** Create a script that creates an alias.
@@ -115,7 +158,10 @@ julien@ubuntu:/tmp/0x03$ ls
 julien@ubuntu:/tmp/0x03$ \ls
 julien@ubuntu:/tmp/0x03$ 
 ```
-- **File:** `0-alias`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `0-alias`
 
 ### 1. Hello you. <sub>([1-hello_you](1-hello_you))</sub>
 - **Description:** Create a script that prints `hello user`, where `user` is the current Linux user.
@@ -128,7 +174,10 @@ julien@ubuntu:/tmp/0x03$ ./1-hello_you
 hello julien
 julien@ubuntu:/tmp/0x03$ 
 ```
-- **File:** `1-hello_you`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `1-hello_you`
 
 ### 2. The path to success is to take massive, determined action. <sub>([2-path](2-path))</sub>
 - **Description:** Add `/action` to the `PATH`. `/action` should be the last directory the shell looks into when looking for a program.
@@ -142,7 +191,10 @@ julien@ubuntu:/tmp/0x03$ echo $PATH
 /home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/action
 julien@ubuntu:/tmp/0x03$ 
 ```
-- **File:** `2-path`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `2-path`
 
 ### 3. If the path be beautiful, let us not ask where it leads. <sub>([3-paths](3-paths))</sub>
 - **Description:** Create a script that counts the number of directories in the `PATH`.
@@ -158,7 +210,10 @@ julien@ubuntu:/tmp/0x03$ . ./3-paths
 12
 julien@ubuntu:/tmp/0x03$ 
 ```
-- **File:** `3-paths`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `3-paths`
 
 ### 4. Global variables. <sub>([4-global_variables](4-global_variables))</sub>
 - **Description:** Create a script that lists environment variables.
@@ -204,7 +259,10 @@ LOGNAME=franky
 [...]
 julien@ubuntu:/tmp/0x03$ 
 ```
-- **File:** `4-global_variables`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `4-global_variables`
 
 ### 5. Local variables. <sub>([5-local_variables](5-local_variables))</sub>
 - **Description:** Create a script that lists all local variables and environment variables, and functions.
@@ -234,19 +292,28 @@ DESKTOP_SESSION=ubuntu
 [...]
 julien@ubuntu:/tmp/0x03$ 
 ```
-- **File:** `5-local_variables`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `5-local_variables`
 
 ### 6. Local variable. <sub>([6-create_local_variable](6-create_local_variable))</sub>
 - **Description:** Create a script that creates a new local variable.
     - Name: `BEST`
     - Value: `School`
-- **File:** `6-create_local_variable`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `6-create_local_variable`
 
 ### 7. Global variable. <sub>([7-create_global_variable](7-create_global_variable))</sub>
 - **Description:** Create a script that creates a new global variable.
     - Name: `BEST`
     - Value: `School`
-- **File:** `7-create_global_variable`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `7-create_global_variable`
 
 ### 8. Every addition to true knowledge is an addition to human power. <sub>([8-true_knowledge](8-true_knowledge))</sub>
 - **Description:** Write a script that prints the result of the addition of 128 with the value stored in the environment variable `TRUEKNOWLEDGE`, followed by a new line.
@@ -258,7 +325,10 @@ julien@production-503e7013:~$ ./8-true_knowledge | cat -e
 1337$
 julien@production-503e7013:~$
 ```
-- **File:** `8-true_knowledge`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `8-true_knowledge`
 
 ### 9. Divide and rule. <sub>([9-divide_and_rule](9-divide_and_rule))</sub>
 - **Description:** Write a script that prints the result of `POWER` divided by `DIVIDE`, followed by a new line.
@@ -272,7 +342,10 @@ julien@production-503e7013:~$ ./9-divide_and_rule | cat -e
 1337$
 julien@production-503e7013:~$
 ```
-- **File:** `9-divide_and_rule`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `9-divide_and_rule`
 
 ### 10. Love is anterior to life, posterior to death, initial of creation, and the exponent of breath. <sub>([10-love_exponent_breath](10-love_exponent_breath))</sub>
 - **Description:** Write a script that displays the result of `BREATH` to the power `LOVE`
@@ -287,7 +360,10 @@ julien@production-503e7013:~/$ ./10-love_exponent_breath
 64
 julien@production-503e7013:~/$
 ```
-- **File:** `10-love_exponent_breath`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `10-love_exponent_breath`
 
 ### 11. There are 10 types of people in the world -- Those who understand binary, and those who don't. <sub>([11-binary_to_decimal](11-binary_to_decimal))</sub>
 - **Description:** Write a script that converts a number from base 2 to base 10.
@@ -301,7 +377,10 @@ julien@production-503e7013:~/$ ./11-binary_to_decimal
 1337
 julien@production-503e7013:~/$
 ```
-- **File:** `11-binary_to_decimal`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `11-binary_to_decimal`
 
 ### 12. Combination. <sub>([12-combinations](12-combinations))</sub>
 - **Description:** Create a script that prints all possible combinations of two letters, except `oo`.
@@ -331,7 +410,10 @@ or
 os
 julien@ubuntu:/tmp/0x03$ 
 ```
-- **File:** `12-combinations`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `12-combinations`
 
 ### 13. Floats. <sub>([13-print_float](13-print_float))</sub>
 - **Description:** Write a script that prints a number with two decimal places, followed by a new line.
@@ -350,7 +432,10 @@ ubuntu@ip-172-31-63-244:~/0x03$ ./13-print_float
 3.14
 ubuntu@ip-172-31-63-244:~/0x03$
 ```
-- **File:** `13-print_float`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `13-print_float`
 
 ### 14. Decimal to Hexadecimal. <sub>([100-decimal_to_hexadecimal](100-decimal_to_hexadecimal))</sub>
 - **Description:** Write a script that converts a number from base 10 to base 16.
@@ -370,7 +455,10 @@ julien@production-503e7013:~/$ ./100-decimal_to_hexadecimal | cat -e
 f$
 julien@production-503e7013:~/$
 ```
-- **File:** `100-decimal_to_hexadecimal`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `100-decimal_to_hexadecimal`
 
 ### 15. Everyone is a proponent of strong encryption. <sub>([101-rot13](101-rot13))</sub>
 - **Description:** Write a script that encodes and decodes text using the rot13 encryption. Assume ASCII.
@@ -386,7 +474,10 @@ julien@production-503e7013:~/shell/fun_with_the_shell$ ./101-rot13 < quote
 julien@production-503e7013:~/shell/fun_with_the_shell$
 
 ```
-- **File:** `101-rot13`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `101-rot13`
 
 ### 16. The eggs of the brood need to be an odd number. <sub>([102-odd](102-odd))</sub>
 - **Description:** Write a script that prints every other line from the input, starting with the first line.
@@ -439,7 +530,10 @@ usr
 vmlinuz
 ubuntu@ip-172-31-63-244:/$
 ```
-- **File:** `102-odd`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `102-odd`
 
 ### 17. I'm an instant star. Just add water and stir. <sub>([103-water_and_stir](103-water_and_stir))</sub>
 - **Description:** Write a shell script that adds the two numbers stored in the environment variables `WATER` and `STIR` and prints the result.
@@ -455,5 +549,9 @@ julien@production-503e7013:~$ ./103-water_and_stir
 shtbeolhc
 julien@production-503e7013:~$
 ```
-- **File:** `103-water_and_stir`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x03-shell_variables_expansions`
+    - **File:** `103-water_and_stir`
+
 
