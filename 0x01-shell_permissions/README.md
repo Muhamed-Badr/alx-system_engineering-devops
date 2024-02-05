@@ -12,6 +12,14 @@ Table of Contents
     * [Other Man Pages](#other-man-pages)
 * [Requirements](#requirements)
     * [General](#general)
+* [Quiz questions](#quiz-questions)
+    * [Question #0](#question-0)
+    * [Question #1](#question-1)
+    * [Question #2](#question-2)
+    * [Question #3](#question-3)
+    * [Question #4](#question-4)
+    * [Question #5](#question-5)
+    * [Question #6](#question-6)
 * [Tasks](#tasks)
     * [0. My name is Betty.](#0-my-name-is-betty-0-iam_betty)
     * [1. Who am I.](#1-who-am-i-1-who_am_i)
@@ -50,6 +58,8 @@ Table of Contents
 - `addgroup`
 
 ## Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg), **without the help of Google:**
+
 ### Permissions
 - What do the commands `chmod`, `sudo`, `su`, `chown`, `chgrp` do
 - Linux file permissions
@@ -75,6 +85,55 @@ Table of Contents
 - You are not allowed to use backticks, `&&`, `||` or `;`
 - All your files must be executable
 
+## Quiz questions
+### Question #0
+What is the numerical value for the `rwx------` permission?
+- [x] 700
+- [ ] 600
+- [ ] 621
+- [ ] 704
+
+### Question #1
+What is the permission value for a file read only for the group owner?
+- [ ] 070
+- [x] 040
+- [ ] 050
+- [ ] 060
+
+### Question #2
+What is the numerical value for the `----w---x` permission?
+- [x] 021
+- [ ] 123
+- [ ] 121
+- [ ] 221
+
+### Question #3
+What is the numerical value for the `r-xr--r--` permission?
+- [ ] 411
+- [ ] 522
+- [x] 544
+- [ ] 644
+
+### Question #4
+Which command should I use for changing a file owner?
+- [ ] chgrp
+- [ ] su
+- [ ] chmod
+- [x] chown
+
+### Question #5
+What is the permission value for a file without any restriction?
+- [ ] 600
+- [ ] 644
+- [x] 777
+
+### Question #6
+Which command should I use for changing a file permission?
+- [ ] chgrp
+- [ ] su
+- [x] chmod
+- [ ] chown
+
 ## Tasks
 ### 0. My name is Betty. <sub>([0-iam_betty](0-iam_betty))</sub>
 - **Description:** Create a script that switches the current user to the user `betty`.
@@ -86,7 +145,10 @@ julien@ubuntu:/tmp/h$ tail -1 0-iam_betty | wc -c
 9
 julien@ubuntu:/tmp/h$
 ```
-- **File:** `0-iam_betty`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `0-iam_betty`
 
 ### 1. Who am I. <sub>([1-who_am_i](1-who_am_i))</sub>
 - **Description:** Write a script that prints the effective username of the current user.
@@ -97,7 +159,10 @@ julien@ubuntu:/tmp/h$ ./1-who_am_i
 julien
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `1-who_am_i`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `1-who_am_i`
 
 ### 2. Groups. <sub>([2-groups](2-groups))</sub>
 - **Description:** Write a script that prints all the groups the current user is part of.
@@ -109,7 +174,10 @@ julien adm cdrom sudo dip plugdev lpadmin sambashare
 julien@ubuntu:/tmp/h$
 ``` 
 - **Note:** depending on the user, you will get a different output.
-- **File:** `2-groups`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `2-groups`
 
 ### 3. New owner. <sub>([3-new_owner](3-new_owner))</sub>
 - **Description:** Write a script that changes the owner of the file `hello` to the user `betty`.
@@ -127,11 +195,17 @@ total 4
 -rw-rw-r-- 1 betty  julien  0 Sep 20 14:18 hello
 julien@ubuntu:/tmp/h$
 ```
-- **File:** `3-new_owner`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `3-new_owner`
 
 ### 4. Empty!. <sub>([4-empty](4-empty))</sub>
 - **Description:** Write a script that creates an empty file called `hello`.
-- **File:** `4-empty`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `4-empty`
 
 ### 5. Execute. <sub>([5-execute](5-execute))</sub>
 - **Description:** Write a script that adds execute permission to the owner of the file `hello`.
@@ -152,7 +226,10 @@ total 8
 -rwxrw-r-- 1 julien julien 23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `5-execute`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `5-execute`
 
 ### 6. Multiple permissions. <sub>([6-multiple_permissions](6-multiple_permissions))</sub>
 - **Description:** Write a script that adds execute permission to the owner and the group owner, and read permission to other users, to the file `hello`.
@@ -171,7 +248,10 @@ total 8
 -r-xr-xr-- 1 julien julien 23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `6-multiple_permissions`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `6-multiple_permissions`
 
 ### 7. Everybody!. <sub>([7-everybody](7-everybody))</sub>
 - **Description:** Write a script that adds execution permission to the owner, the group owner and the other users, to the file `hello`
@@ -191,7 +271,10 @@ total 8
 -rwxr-x--x 1 julien julien 23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `7-everybody`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `7-everybody`
 
 ### 8. James Bond. <sub>([8-James_Bond](8-James_Bond))</sub>
 - **Description:** Write a script that sets the permission to the file `hello` as follows:
@@ -214,14 +297,20 @@ total 8
 -------rwx 1 julien julien 23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `8-James_Bond`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `8-James_Bond`
 
 ### 9. John Doe. <sub>([9-John_Doe](9-John_Doe))</sub>
 - **Description:** Write a script that sets the mode of the file `hello` to this:
 `-rwxr-x-wx 1 julien julien 23 Sep 20 14:25 hello`
     - The file `hello` will be in the working directory
     - You are not allowed to use commas for this script
-- **File:** `9-John_Doe`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `9-John_Doe`
 
 ### 10. Look in the mirror. <sub>([10-mirror_permissions](10-mirror_permissions))</sub>
 - **Description:** Write a script that sets the mode of the file `hello` the same as `olleh`’s mode.
@@ -244,7 +333,10 @@ total 8
 julien@ubuntu:/tmp/h$ 
 ```
 - **Note:** the mode of olleh will not always be 664. Make sure your script works for any mode.
-- **File:** `10-mirror_permissions`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `10-mirror_permissions`
 
 ### 11. Directories. <sub>([11-directories_permissions](11-directories_permissions))</sub>
 - **Description:** Create a script that adds execute permission to all subdirectories of the **current directory** for the owner, the group owner and all other users.
@@ -269,7 +361,10 @@ drwx--x--x 2 julien julien 4096 Sep 20 14:49 dir2
 -rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `11-directories_permissions`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `11-directories_permissions`
 
 ### 12. More directories. <sub>([12-directory_permissions](12-directory_permissions))</sub>
 - **Description:** Create a script that creates a directory called `my_dir` with permissions 751 in the working directory.
@@ -294,7 +389,10 @@ drwxr-x--x 2 julien julien 4096 Sep 20 14:59 my_dir
 -rw-rw-r-- 1 julien julien   23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `12-directory_permissions`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `12-directory_permissions`
 
 ### 13. Change group. <sub>([13-change_group](13-change_group))</sub>
 - **Description:** Write a script that changes the group owner to `school` for the file `hello`
@@ -321,7 +419,10 @@ drwxr-x--x 2 julien julien    4096 Sep 20 14:59 my_dir
 -rw-rw-r-- 1 julien school      23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `13-change_group`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `13-change_group`
 
 ### 14. Owner and group. <sub>([100-change_owner_and_group](100-change_owner_and_group))</sub>
 - **Description:** Write a script that changes the owner to `vincent` and the group owner to `staff` for all the files and directories in the working directory.
@@ -347,7 +448,10 @@ drwxr-x--x 2 vincent staff 4096 Sep 20 14:59 my_dir
 -rw-rw-r-- 1 vincent staff   23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `100-change_owner_and_group`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `100-change_owner_and_group`
 
 ### 15. Symbolic links. <sub>([101-symbolic_link_permissions](101-symbolic_link_permissions))</sub>
 - **Description:** Write a script that changes the owner and the group owner of `_hello` to `vincent` and `staff` respectively.
@@ -369,7 +473,10 @@ total 24
 lrwxrwxrwx 1 vincent  staff      5 Sep 20 15:10 _hello -> hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `101-symbolic_link_permissions`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `101-symbolic_link_permissions`
 
 ### 16. If only. <sub>([102-if_only](102-if_only))</sub>
 - **Description:** Write a script that changes the owner of the file `hello` to `betty` only if it is owned by the user `guillaume`.
@@ -388,9 +495,16 @@ total 24
 -rw-rw-r-- 1 betty  julien      23 Sep 20 14:25 hello
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `102-if_only`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `102-if_only`
 
 ### 17. Star Wars. <sub>([103-Star_Wars](103-Star_Wars))</sub>
 - **Description:** Write a script that will play the StarWars IV episode in the terminal.
-- **File:** `103-Star_Wars`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x01-shell_permissions`
+    - **File:** `103-Star_Wars`
+
 
