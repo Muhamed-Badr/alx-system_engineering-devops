@@ -14,6 +14,14 @@ Table of Contents
 * [Requirements](#requirements)
     * [General](#general)
 * [More Info](#more-info)
+* [Quiz questions](#quiz-questions)
+    * [Question #0](#question-0)
+    * [Question #1](#question-1)
+    * [Question #2](#question-2)
+    * [Question #3](#question-3)
+    * [Question #4](#question-4)
+    * [Question #5](#question-5)
+    * [Question #6](#question-6)
 * [Tasks](#tasks)
     * [0. Hello World.](#0-hello-world-0-hello_world)
     * [1. Confused smiley.](#1-confused-smiley-1-confused_smiley)
@@ -64,6 +72,8 @@ Table of Contents
 - `passwd (5)` (i.e. `man 5 passwd`)
 
 ## Learning Objectives
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/feynman-learning-technique/?fbclid=IwAR2K5_BGPVo0QjJXkOIIqNsqcXK4lTskPWJvA0asKQIGtCPWaQBdKmj1Ztg), **without the help of Google:**
+
 ### Shell, I/O Redirection
 - What do the commands `head`, `tail`, `find`, `wc`, `sort`, `uniq`, `grep`, `tr` do
 - How to redirect standard output to a file
@@ -97,6 +107,55 @@ Read your `/etc/passwd` and `/etc/shadow` files.
 
 **Note:** You do not have to learn about `fmt`, `pr`, `du`, `gzip`, `tar`, `lpr`, `sed` and `awk` yet.
 
+## Quiz questions
+### Question #0
+Which command should I use to display the entire file content?
+- [ ] tail
+- [ ] grep
+- [x] cat
+- [ ] head
+
+### Question #1
+Which symbol should I use to start a comment?
+- [x] `#`
+- [ ] `&`
+- [ ] `!`
+- [ ] `//`
+
+### Question #2
+Which symbol should I use to escape a special character?
+- [ ] `#`
+- [x] `\`
+- [ ] `!`
+- [ ] `$`
+
+### Question #3
+Which command should I use to display the last 11 lines of a file?
+- [ ] tail 11 my_file
+- [ ] head -n 11 my_file
+- [ ] head 11 my_file
+- [x] tail -n 11 my_file
+
+### Question #4
+Which symbol should I use to redirect the standard output to a file (appending to the file)?
+- [ ] `&`
+- [x] `>>`
+- [ ] `2>`
+- [ ] `>`
+
+### Question #5
+Which symbol should I use to redirect the error output to the standard output?
+- [x] `2>&1`
+- [ ] `2>`
+- [ ] `1>&2`
+
+### Question #6
+Which symbol should I use to redirect the standard output to a file (overwrite the file)?
+- [ ] `&`
+- [ ] `>>`
+- [ ] `2>`
+- [x] `>`
+
 ## Tasks
 ### 0. Hello World. <sub>([0-hello_world](0-hello_world))</sub>
 - **Description:** Write a script that prints “Hello, World”, followed by a new line to the standard output.
@@ -109,7 +168,10 @@ julien@ubuntu:/tmp/h$ ./0-hello_world | cat -e
 Hello, World$
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `0-hello_world`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `0-hello_world`
 
 ### 1. Confused smiley. <sub>([1-confused_smiley](1-confused_smiley))</sub>
 - **Description:** Write a script that displays a confused smiley `"(Ôo)'`.
@@ -120,7 +182,10 @@ julien@ubuntu:/tmp/h$ ./1-confused_smiley
 "(Ôo)'
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `1-confused_smiley`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `1-confused_smiley`
 
 ### 2. Let's display a file. <sub>([2-hellofile](2-hellofile))</sub>
 - **Description:** Display the content of the `/etc/passwd` file.
@@ -153,7 +218,10 @@ _mcxalr:*:54:54:MCX AppLaunch:/var/empty:/usr/bin/false
 _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 $
 ```
-- **File:** `2-hellofile`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `2-hellofile`
 
 ### 3. What about 2?. <sub>([3-twofiles](3-twofiles))</sub>
 - **Description:** Display the content of `/etc/passwd` and `/etc/hosts`
@@ -185,7 +253,10 @@ daemon:*:1:1:System Services:/var/root:/usr/bin/false
 ::1 localhost
 $
 ```
-- **File:** `3-twofiles`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `3-twofiles`
 
 ### 4. Last lines of a file. <sub>([4-lastlines](4-lastlines))</sub>
 - **Description:** Display the last 10 lines of `/etc/passwd`
@@ -205,7 +276,10 @@ _astris:*:245:245:Astris Services:/var/db/astris:/usr/bin/false
 _krbfast:*:246:-2:Kerberos FAST Account:/var/empty:/usr/bin/false
 ```
 - **Tips:** “Thinks of it as a cat, what is at the end of it?”
-- **File:** `4-lastlines`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `4-lastlines`
 
 ### 5. I'd prefer the first ones actually. <sub>([5-firstlines](5-firstlines))</sub>
 - **Description:** Display the first 10 lines of `/etc/passwd`
@@ -225,7 +299,10 @@ $ ./5-firstlines
 ##
 $
 ```
-- **File:** `5-firstlines`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `5-firstlines`
 
 ### 6. Line #2. <sub>([6-third_line](6-third_line))</sub>
 - **Description:** Write a script that displays the third line of the file `iacta`.
@@ -254,7 +331,10 @@ Alea iacta est ("The die is cast") is a Latin phrase attributed by Suetonius
 julien@ubuntu:/tmp/h$ 
 ```
 - **Note:** The output will differ, depending on the content of the file `iacta`.
-- **File:** `6-third_line`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `6-third_line`
 
 ### 7. It is a good file that cuts iron without making a noise. <sub>([7-file](7-file))</sub>
 - **Description:** Write a shell script that creates a file named exactly `\*\\'"Best School"\'\\*$\?\*\*\*\*\*:)` containing the text `Best School` ending by a new line.
@@ -272,7 +352,10 @@ total 20
 Best School$
 julien@ubuntu:~/shell$
 ```
-- **File:** `7-file`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `7-file`
 
 ### 8. Save current state of directory. <sub>([8-cwd_state](8-cwd_state))</sub>
 - **Description:** Write a script that writes into the file `ls_cwd_content` the result of the command `ls -la`. If the file `ls_cwd_content` already exists, it should be overwritten. If the file `ls_cwd_content` does not exist, create it.
@@ -305,7 +388,10 @@ drwxrwxrwt 13 root   root   4096 Sep 20 18:18 ..
 -rw-rw-r--  1 julien julien    0 Sep 20 18:18 ls_cwd_content
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `8-cwd_state`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `8-cwd_state`
 
 ### 9. Duplicate last line. <sub>([9-duplicate_last_line](9-duplicate_last_line))</sub>
 - **Description:** Write a script that duplicates the last line of the file `iacta`
@@ -347,7 +433,10 @@ Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
 Read more: https://en.wikipedia.org/wiki/Alea_iacta_est
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `9-duplicate_last_line`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `9-duplicate_last_line`
 
 ### 10. No more javascript. <sub>([10-no_more_js](10-no_more_js))</sub>
 - **Description:** Write a script that deletes all the regular files (not the directories) with a `.js` extension that are present in the current directory and all its subfolders.
@@ -389,7 +478,10 @@ total 0
 total 0
 julien@ubuntu:/tmp/h$ 
 ```
-- **File:** `10-no_more_js`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `10-no_more_js`
 
 ### 11. Don't just count your directories, make your directories count. <sub>([11-directories](11-directories))</sub>
 - **Description:** Write a script that counts the number of directories and sub-directories in the current directory.
@@ -438,7 +530,10 @@ julien@production-503e7013:~/shell/fun_with_the_shell$ ./11-directories
 3
 julien@production-503e7013:~/shell/fun_with_the_shell$
 ```
-- **File:** `11-directories`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `11-directories`
 
 ### 12. What’s new. <sub>([12-newest_files](12-newest_files))</sub>
 - **Description:** Create a script that displays the 10 newest files in the current directory.
@@ -477,7 +572,10 @@ alex@ubuntu:/tmp$ ./12-newest_files
 3-twofiles
 alex@ubuntu:/tmp$
 ```
-- **File:** `12-newest_files`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `12-newest_files`
 
 ### 13. Being unique is better than being perfect. <sub>([13-unique](13-unique))</sub>
 - **Description:** Create a script that takes a list of words as input and prints only words that appear exactly once.
@@ -520,7 +618,10 @@ C++
 Go
 julien@ubuntu:/tmp/0x02$ 
 ```
-- **File:** `13-unique`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `13-unique`
 
 ### 14. It must be in that file. <sub>([14-findthatword](14-findthatword))</sub>
 - **Description:** Display lines containing the pattern “root” from the file `/etc/passwd`
@@ -533,7 +634,10 @@ daemon:*:1:1:System Services:/var/root:/usr/bin/false
 _cvmsroot:*:212:212:CVMS Root:/var/empty:/usr/bin/false
 $
 ```
-- **File:** `14-findthatword`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `14-findthatword`
 
 ### 15. Count that word. <sub>([15-countthatword](15-countthatword))</sub>
 - **Description:** Display the number of lines that contain the pattern “bin” in the file `/etc/passwd`
@@ -544,7 +648,10 @@ $ ./15-countthatword
 81
 $ 
 ```
-- **File:** `15-countthatword`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `15-countthatword`
 
 ### 16. What's next?. <sub>([16-whatsnext](16-whatsnext))</sub>
 - **Description:** Display lines containing the pattern “root” and 3 lines after them in the file `/etc/passwd`.
@@ -564,7 +671,10 @@ _dovecot:*:214:6:Dovecot Administrator:/var/empty:/usr/bin/false
 _dpaudio:*:215:215:DP Audio:/var/empty:/usr/bin/false
 $
 ```
-- **File:** `16-whatsnext`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `16-whatsnext`
 
 ### 17. I hate bins. <sub>([17-hidethisword](17-hidethisword))</sub>
 - **Description:** Display all the lines in the file `/etc/passwd` that do not contain the pattern “bin”.
@@ -584,7 +694,10 @@ $ ./17-hidethisword
 ##
 $
 ```
-- **File:** `17-hidethisword`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `17-hidethisword`
 
 ### 18. Letters only please. <sub>([18-letteronly](18-letteronly))</sub>
 - **Description:** Display all lines of the file `/etc/ssh/sshd_config` starting with a letter.
@@ -600,7 +713,10 @@ AcceptEnv LANG LC_*
 Subsystem   sftp    /usr/libexec/sftp-server
 $
 ```
-- **File:** `18-letteronly`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `18-letteronly`
 
 ### 19. A to Z. <sub>([19-AZ](19-AZ))</sub>
 - **Description:** Replace all characters `A` and `c` from input to `Z` and `e` respectively.
@@ -611,7 +727,10 @@ julien@ubuntu:/tmp/0x02$ echo 'Replace all characters `A` and `c` from input to 
 Replaee all eharaeters `Z` and `e` from input to `Z` and `e`.
 julien@ubuntu:/tmp/0x02$ 
 ```
-- **File:** `19-AZ`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `19-AZ`
 
 ### 20. Without C, you would live in hiago. <sub>([20-hiago](20-hiago))</sub>
 - **Description:** Create a script that removes all letters `c` and `C` from input.
@@ -622,7 +741,10 @@ julien@ubuntu:/tmp/0x02$ echo Chicago | ./20-hiago
 hiago
 julien@ubuntu:/tmp/0x02$ 
 ```
-- **File:** `20-hiago`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `20-hiago`
 
 ### 21. esreveR. <sub>([21-reverse](21-reverse))</sub>
 - **Description:** Write a script that reverse its input.
@@ -633,7 +755,10 @@ julien@ubuntu:/tmp/0x02$ echo "Reverse" | ./21-reverse
 esreveR
 julien@ubuntu:/tmp/0x02$ 
 ```
-- **File:** `21-reverse`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `21-reverse`
 
 ### 22. DJ Cut Killer. <sub>([22-users_and_homes](22-users_and_homes))</sub>
 - **Description:** Write a script that displays all users and their home directories, sorted by users.
@@ -730,7 +855,10 @@ whoopsie:/nonexistent
 www-data:/var/www
 julien@ubuntu:/tmp/0x02$ 
 ```
-- **File:** `22-users_and_homes`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `22-users_and_homes`
 
 ### 23. Empty casks make the most noise. <sub>([100-empty_casks](100-empty_casks))</sub>
 - **Description:** Write a command that finds all empty files and directories in the current directory and all sub-directories.
@@ -816,7 +944,10 @@ rudy_rigot.gif
 ........gif
 ubuntu@ip-172-31-63-244:~/0x02-shell_redirections$
 ```
-- **File:** `100-empty_casks`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `100-empty_casks`
 
 ### 24. A gif is worth ten thousand words. <sub>([101-gifs](101-gifs))</sub>
 - **Description:** Write a script that lists all the files with a `.gif` extension in the current directory and all its sub-directories.
@@ -873,7 +1004,10 @@ Electra_napping
 main
 julien@production-503e7013:~/shell/fun_with_the_shell$
 ```
-- **File:** `101-gifs`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `101-gifs`
 
 ### 25. Acrostic. <sub>([102-acrostic](102-acrostic))</sub>
 - **Description:** Create a script that decodes acrostics that use the first letter of each line.
@@ -897,7 +1031,10 @@ julien@ubuntu:/tmp/0x02$ ./102-acrostic < An\ Acrostic
 ELIZABETH
 julien@ubuntu:/tmp/0x02$ 
 ```
-- **File:** `102-acrostic`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `102-acrostic`
 
 ### 26. The biggest fan. <sub>([103-the_biggest_fan](103-the_biggest_fan))</sub>
 - **Description:** Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
@@ -953,6 +1090,10 @@ s150.phxslip4.indirect.com
 torben.dou.dk
 julien@ubuntu:/tmp/0x02$ 
 ```
-- **File:** `103-the_biggest_fan`
+- **Repo:**
+    - **GitHub repository:** `alx-system_engineering-devops`
+    - **Directory:** `0x02-shell_redirections`
+    - **File:** `103-the_biggest_fan`
+
 
 
