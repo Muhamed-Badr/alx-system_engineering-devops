@@ -1,7 +1,9 @@
 # Welcome To 0x00-shell_basics
+<details>
+   <summary><h2>Table of Contents</h2></summary>
 
-Table of Contents
-=================
+<!-- Table of Contents -->
+<!-- ================= -->
 * [Welcome To 0x00-shell_basics](#welcome-to-0x00-shell_basics)
 * [Table of Contents](#table-of-contents)
 * [Resources](#resources)
@@ -45,6 +47,8 @@ Table of Contents
     * [17. Tree.](#17-tree-102-tree)
     * [18. Life is a series of commas, not periods.](#18-life-is-a-series-of-commas-not-periods-103-commas)
     * [19. File type: School.](#19-file-type-school-schoolmgc)
+
+</details>
 
 ## Resources
 ### Read or watch:
